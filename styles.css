@@ -37,12 +37,12 @@ p {
 }
 
 .nav a:link, a:visited {
-  color: gray;
+  color: azure;
   text-decoration: none;
 }
 
 a:hover {
-  color: white;
+  color: black;
   opacity: 75%;
   text-decoration: none;
 }

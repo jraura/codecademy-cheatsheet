@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML & CSS Cheatsheet</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>HTML & CSS Cheatsheet</h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="#html-tags">HTML Tags |</a></li>
+          <li><a href="#html-attributes">HTML Attributes |</a></li>
+          <li><a href="#css-properties/values">CSS Properties & Values</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 id="html-tags">HTML Tags</h2>
+      <p>HTML tags are the hidden keywords within a web page that define how your web browser must format and display the content.</p>
+      <h3>Common HTML Tags</h3>
+        <table>
+          <tr>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+          <td>&lt;html&gt;</td>
+            <td>html document root tag</td>
+            <td>The &lt;html&gt; element will contain all of your HTML code.</td>
+          <tr>
+            <td>&lt;head&gt;</td>
+            <td>head</td>
+            <td>Information about the web page (metadata), like the title, belongs within the &lt;head&gt; of the page.</td>
+          </tr>
+          <td>&lt;title&gt;</td>
+            <td>title</td>
+            <td>You can add a title to your web page by using the &lt;title&gt; element, inside of the head.
+    </td>
+          <tr>
+            <td>&lt;body&gt;</td>
+            <td>body</td>
+            <td>Any visible content should be placed within the opening and closing &lt;body&gt; tags</td>
+          </tr>
+          <tr>
+            <td>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;...</td>
+            <td>heading</td>
+            <td>Headings and sub-headings, &lt;h1&gt; to &lt;h6&gt; tags, are used to enlarge text</td>
+          </tr>
+          <tr>
+            <td>&lt;p&gt;</td>
+            <td>paragraph</td>
+            <td>Specifies text.</td>
+          </tr>
+          <tr>
+            <td>&lt;img&gt;</td>
+            <td>image</td>
+            <td>Images (&lt;img&gt;) can be added by linking to an existing source using the <a href="#src">scr attribute.</a></td>
+          </tr>
+          <tr>
+            <td>&lt;a&gt;</td>
+            <td>anchor</td>
+            <td>The &lt;a&gt; anchor element is used to create hyperlinks in an HTML document. The hyperlinks can point to other webpages, files on the same server, a location on the same page, or any other URL via the hyperlink reference attribute, <a href="#href">href</a>.</td>
+          </tr>
+          <tr>
+            <td>&lt;div&gt;</td>
+            <td>division</td>
+            <td>Short for “division” or a container that divides the page into sections. These sections are very useful for grouping elements in your HTML together
+    </td>
+          </tr>
+        </table>
+        <br>
+        <h3>Semantic HTML Tags</h3>
+        <table>
+          <tr>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>&lt;header&gt;</td>
+            <td>header</td>
+            <td>Defines a header for a document; provides basic structure of the webpage and enables screen readers to translate the webpage and improves your website’s SEO.
+    </td>
+          </tr>
+          <tr>
+            <td>&lt;main&gt;</td>
+            <td>main</td>
+            <td>Specifies the main content of a document; provides basic structure of the webpage and enables screen readers to translate the webpage and improves your website’s SEO.
+    </td>
+          </tr>
+          <tr>
+            <td>&lt;footer&gt;</td>
+            <td>footer</td>
+            <td>Defines a footer for a document; provides basic structure of the webpage and enables screen readers to translate the webpage and improves your website’s SEO.</td>
+          </tr>
+          <tr>
+            <td>&lt;section&gt;</td>
+            <td>section</td>
+            <td>Defines elements in a document, such as chapters, headings, or any other area of the document with the same theme.
+    </td>
+          </tr>
+          <tr>
+            <td>&lt;article&gt;</td>
+            <td>article</td>
+            <td>Holds content that makes sense on its own such as articles, blogs, comments, etc.
+    </td>
+          </tr>
+          <tr>
+            <td>&lt;aside&gt;</td>
+            <td>aside</td>
+            <td>Contains information that is related to the main content, but not required in order to understand the dominant information.</td>
+          </tr>
+        </table>
+        <br>
+        <h2 id="html-attributes">HTML Attributes</h2>
+        <p>HTML attributes are values added to the opening tag of an element to configure the element or change the element’s default behavior. </p>
+        <h3>Common HTML Attributes</h3>
+        <table>
+          <tr>
+            <th>Attribute</th>
+            <th>Belongs to</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>class</td>
+            <td>global attributes</td>
+            <td>Specifies one or more classnames for an element (refers to a class in a style sheet).</td>
+          </tr>
+          <tr>
+            <td>id</td>
+            <td>global attributes</td>
+            <td>When needed, the id value can be called upon by <a href="#css-properties/values">CSS</a> and JavaScript to manipulate, format, and perform specific instructions on that element and that element only.</td>
+          </tr>
+          <tr>
+            <td>style</td>
+            <td>global attributes</td>
+            <td>Specifies an inline CSS style for an element.</td>
+          </tr>
+          <tr>
+            <td id="href">href</td>
+            <td>&lt;a&gt;, &lt;area&gt;, &lt;base&gt;, &lt;link&gt;</td>
+            <td>The href determines the location the anchor element points to.</td>
+          </tr>
+          <tr>
+            <td id="src">src</td>
+            <td>&lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;input&gt;, &lt;script&gt;, &lt;source&gt;, &lt;track&gt;, &lt;video&gt;</td>
+            <td>Specifies the URL of a media file.</td>
+          </tr>
+          <tr>
+            <td>type</td>
+            <td>&lt;a&gt;, &lt;button&gt;, &lt;embed&gt;, &lt;input&gt;, &lt;link&gt;, &lt;menu&gt;, &lt;object&gt;, &lt;script&gt;, &lt;source&gt;, &lt;style&gt;</td>
+            <td>Specifies the type of the element; for example, the input type="text" specifies that text is to be inputted into a form.</td>
+          </tr>
+          <tr>
+            <td>alt</td>
+            <td>&lt;area&gt;, &lt;img&gt;, &lt;input&gt;</td>
+            <td>Specifies an alternate text when the original element fails to display</td>
+          </tr>
+          <tr>
+            <td>target</td>
+            <td>&lt;a&gt;, &lt;area&gt;, &lt;base&gt;, &lt;form&gt;</td>
+            <td>Specifies the target for where to open the linked document or where to submit the form.</td>
+          </tr>
+        </table>
+        <br>
+        <h2 id="css-properties/values">CSS Properties & Values</h2>
+        <p>CSS, or Cascading Style Sheets, is a language that web developers use to style the HTML content on a web page. If you’re interested in modifying colors, font types, font sizes, shadows, images, element positioning, and more, CSS is the tool for the job!</p>
+        <h3>Common CSS Properties & Values</h3>
+        <table>
+          <tr>
+            <th>Property</th>
+            <th>Value Examples</th>
+             <th>Description</th>
+          </tr>
+          <tr>
+            <td>font-family</td>
+            <td>"Arial", "Georgia", "Helvetica"</td>
+            <td>The font-family CSS property is used to specify the typeface in a rule set. Fonts must be available to the browser to display correctly, either on the computer or linked as a web font.</td>
+          </tr>
+           <tr>
+            <td>font-size</td>
+            <td>px, large, 150%</td>
+            <td>The font-size CSS property is used to set text sizes. Font size values can be many different units or types such as pixels.</td>
+          </tr>
+           <tr>
+            <td>text-align</td>
+            <td>left, right, center</td>
+            <td>The text-align CSS property can be used to set the text alignment of inline contents.</td>
+          </tr>
+           <tr>
+            <td>color</td>
+            <td>green, #22f, #2a2aff</td>
+            <td>Using the color property, foreground text color of an element can be set in CSS.</td>
+          </tr>
+           <tr>
+            <td>background-color</td>
+            <td>blue, #22f, #2a2aff</td>
+            <td>The background-color CSS property controls the background color of elements.</td>
+          </tr>
+        </table>
+    </main>
+    <br>
+    <footer>
+      <div>
+        <ul class="contact">
+          <li>published by: Jamie Aura |</li>
+          <li>email: jamieraura@gmail.com |</li>
+          <li>phone: (778) 823-3744 </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
